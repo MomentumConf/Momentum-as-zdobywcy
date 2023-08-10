@@ -6,7 +6,6 @@ import React, { FC, useState } from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
 import { useTheme } from '@emotion/react'
-import Map from './screens/Map'
 import ScheduleScreen, { screens as scheduleScreens } from './screens/Schedule'
 import NotificationsScreen from './screens/Notifications'
 import InformationsScreen, {
@@ -25,7 +24,6 @@ export const screens = {
     path: 'info',
     screens: infoScreens,
   },
-  Map: 'mapa',
 }
 
 const BottomTab = createBottomTabNavigator<Record<keyof typeof screens, undefined>>()
@@ -39,7 +37,6 @@ const NotificationIcon: FC<{ color: string }> = ({ color }) => (
 const InfoIcon: FC<{ color: string }> = ({ color }) => (
   <TabIcon name="information-circle-sharp" color={color} />
 )
-const MapIcon: FC<{ color: string }> = ({ color }) => <TabIcon name="map-sharp" color={color} />
 
 const BottomTabNavigator: FC = () => {
   const theme = useTheme()
@@ -116,14 +113,6 @@ const BottomTabNavigator: FC = () => {
             })
           },
         })}
-      />
-      <BottomTab.Screen
-        name="Map"
-        component={Map}
-        options={{
-          tabBarIcon: MapIcon,
-          title: 'Mapa',
-        }}
       />
     </BottomTab.Navigator>
   )
