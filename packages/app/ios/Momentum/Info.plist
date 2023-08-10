@@ -55,14 +55,14 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>zdobywcykonf</string>
-          <string>pl.scrlk.zdobywcy</string>
+          <string>momentumkonf</string>
+          <string>pl.scrlk.momentum</string>
         </array>
       </dict>
     </array>
     <key>UIRequiresFullScreen</key>
     <true/>
     <key>CFBundleDisplayName</key>
-    <string>Zdobywcy</string>
+    <string>Momentum</string>
   </dict>
 </plist>

@@ -1,4 +1,4 @@
-package pl.scrlk.zdobywcy.generated;
+package pl.scrlk.momentum.generated;
 
 import java.util.Arrays;
 import java.util.List;
