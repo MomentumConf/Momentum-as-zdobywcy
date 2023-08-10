@@ -101,7 +101,7 @@ const BottomTabNavigator: FC = () => {
         component={InformationsScreen}
         options={{
           tabBarIcon: InfoIcon,
-          title: 'Informacje',
+          title: 'Mówcy',
           unmountOnBlur: true,
         }}
         listeners={({ navigation }) => ({
@@ -117,14 +117,14 @@ const BottomTabNavigator: FC = () => {
           },
         })}
       />
-      <BottomTab.Screen
+      {/* <BottomTab.Screen
         name="Map"
         component={Map}
         options={{
           tabBarIcon: MapIcon,
           title: 'Mapa',
         }}
-      />
+      /> */}
     </BottomTab.Navigator>
   )
 }
