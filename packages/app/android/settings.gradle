@@ -1,3 +1,4 @@
+// Should it be Zdobywcy as well? Not sure, don't want to break something
 rootProject.name = 'Momentum'
 
 apply from: '../node_modules/react-native-unimodules/gradle.groovy'

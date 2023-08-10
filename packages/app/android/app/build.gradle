@@ -132,7 +132,7 @@ android {
     }
 
     defaultConfig {
-        applicationId 'pl.scrlk.momentum'
+        applicationId 'pl.scrlk.zdobywcy'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

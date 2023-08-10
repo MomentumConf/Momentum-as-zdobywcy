@@ -1,4 +1,4 @@
-package pl.scrlk.momentum;
+package pl.scrlk.zdobywcy;
 import android.content.res.Configuration;
 import android.content.Intent;
 

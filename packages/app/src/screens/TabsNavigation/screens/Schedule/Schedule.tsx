@@ -44,7 +44,7 @@ const DaysTabs: FC = () => {
                 key={id}
                 name={name}
                 component={Page}
-                options={{ title: `Plan na ${name} | Momentum`, tabBarLabel: shortName }}
+                options={{ title: `Plan na ${name} | Zdobywcy`, tabBarLabel: shortName }}
               />
             )
           })
@@ -67,7 +67,7 @@ const DaysTabs: FC = () => {
 const Schedule: FC = () => {
   return (
     <>
-      <Header>MOMENTUM KONF 2023</Header>
+      <Header>ZDOBYWCY 2023</Header>
       <ErrorBoundary>
         <DaysTabs />
       </ErrorBoundary>

@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Momentum",
-    "slug": "momentum",
+    "name": "Zdobywcy",
+    "slug": "zdobywcy",
     "version": "1.4.0",
     "orientation": "portrait",
     "icon": "./src/assets/images/icon.png",
-    "scheme": "momentumkonf",
+    "scheme": "zdobywcykonf",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./src/assets/images/splash.jpg",
@@ -19,11 +19,11 @@
       "**/*"
     ],
     "ios": {
-      "bundleIdentifier": "pl.scrlk.momentum",
+      "bundleIdentifier": "pl.scrlk.zdobywcy",
       "supportsTablet": true
     },
     "android": {
-      "package": "pl.scrlk.momentum",
+      "package": "pl.scrlk.zdobywcy",
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/images/adaptive-icon.png",
         "backgroundColor": "#121212"
