@@ -11,7 +11,7 @@ const Speaker: FC<SpeakerFragment & { size?: number }> = ({ image, name, size = 
   const navigation = useNavigation()
   const goToSpeaker = () =>
     navigation.navigate('Root', {
-      screen: 'Info',
+      screen: 'Speakers',
       params: {
         screen: 'Speaker',
         params: {

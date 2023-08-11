@@ -17,7 +17,7 @@ const SpeakerCard: FC<Pick<Speaker, 'name' | 'description' | 'image'>> = ({ name
   const navigation = useNavigation()
   const onPress = () =>
     navigation.navigate('Root', {
-      screen: 'Info',
+      screen: 'Speakers',
       params: {
         screen: 'Speaker',
         params: {

@@ -8,8 +8,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { useTheme } from '@emotion/react'
 import ScheduleScreen, { screens as scheduleScreens } from './screens/Schedule'
 import NotificationsScreen from './screens/Notifications'
-import InformationsScreen, {
-  screens as infoScreens,
+import SpeakersScreen, {
+  screens as speakersScreens,
 } from 'screens/TabsNavigation/screens/Informations'
 import TabIcon from './components/TabIcon'
 import useNotifications from 'hooks/useNotifications'
@@ -20,9 +20,9 @@ export const screens = {
     screens: scheduleScreens,
   },
   Notifications: 'powiadomienia',
-  Info: {
-    path: 'info',
-    screens: infoScreens,
+  Speakers: {
+    path: 'mowcy',
+    screens: speakersScreens,
   },
 }
 
@@ -94,24 +94,16 @@ const BottomTabNavigator: FC = () => {
         }}
       />
       <BottomTab.Screen
-        name="Info"
-        component={InformationsScreen}
+        name="Speakers"
+        component={SpeakersScreen}
         options={{
           tabBarIcon: InfoIcon,
-          title: 'Informacje',
+          title: 'Mówcy',
           unmountOnBlur: true,
         }}
         listeners={({ navigation }) => ({
           // Issue with `unmountOnBlur`: https://git.io/JGOxL
           blur: () => navigation.setParams({ screen: undefined }),
-          tabPress: () => {
-            navigation.navigate('Root', {
-              screen: 'Info',
-              params: {
-                screen: 'InfoScreen',
-              },
-            })
-          },
         })}
       />
     </BottomTab.Navigator>
