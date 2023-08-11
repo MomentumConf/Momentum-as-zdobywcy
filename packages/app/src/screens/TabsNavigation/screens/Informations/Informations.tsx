@@ -36,7 +36,7 @@ const Informations: FC = () => (
     <Stack.Screen
       name="SpeakersList"
       component={Speakers}
-      options={{ title: 'Mówcy' }}
+      options={{ title: 'Mówcy', headerShown: false }}
     />
     <Stack.Screen
       name="Speaker"
