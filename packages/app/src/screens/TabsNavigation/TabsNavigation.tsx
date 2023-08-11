@@ -34,8 +34,8 @@ const ScheduleIcon: FC<{ color: string }> = ({ color }) => (
 const NotificationIcon: FC<{ color: string }> = ({ color }) => (
   <TabIcon name="notifications-sharp" color={color} />
 )
-const InfoIcon: FC<{ color: string }> = ({ color }) => (
-  <TabIcon name="information-circle-sharp" color={color} />
+const SpeakersIcon: FC<{ color: string }> = ({ color }) => (
+  <TabIcon name="people-circle-sharp" color={color} />
 )
 
 const BottomTabNavigator: FC = () => {
@@ -97,7 +97,7 @@ const BottomTabNavigator: FC = () => {
         name="Speakers"
         component={SpeakersScreen}
         options={{
-          tabBarIcon: InfoIcon,
+          tabBarIcon: SpeakersIcon,
           title: 'Mówcy',
           unmountOnBlur: true,
         }}
