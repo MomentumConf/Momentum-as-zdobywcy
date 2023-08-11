@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { AutocompleteInput } from 'react-admin'
 
-const locations = ['Sala Główna', 'Łuczniczka', 'VOLO Room', 'VIP room', 'Plaża zachodnia'].map(
+const locations = ['Sala Główna', 'Sala 1', 'Sala 2', 'Sala 3', 'Stołówka'].map(
   (name) => ({ id: name, name }),
 )
 
