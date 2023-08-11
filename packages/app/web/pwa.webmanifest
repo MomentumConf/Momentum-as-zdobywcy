@@ -1,11 +1,11 @@
 {
-  "name": "Konferencja Momentum",
-  "short_name": "Momentum",
+  "name": "Konferencja Zdobywcy",
+  "short_name": "Zdobywcy",
   "lang": "pl-PL",
   "default_locale": "pl",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#2cf0b2",
+  "theme_color": "#ee9f37",
   "background_color": "#121212",
   "icons": [
     {
