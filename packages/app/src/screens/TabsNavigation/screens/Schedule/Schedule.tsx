@@ -67,7 +67,7 @@ const DaysTabs: FC = () => {
 const Schedule: FC = () => {
   return (
     <>
-      <Header>ZDOBYWCY 2023</Header>
+      <Header>KONFERENCJA ZDOBYWCY 2023</Header>
       <ErrorBoundary>
         <DaysTabs />
       </ErrorBoundary>
