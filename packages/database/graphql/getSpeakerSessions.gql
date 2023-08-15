@@ -10,6 +10,7 @@ query getSpeakerSessions($speaker_id: uuid!) {
     subject
     location
     session {
+      name
       begins_at
     }
   }

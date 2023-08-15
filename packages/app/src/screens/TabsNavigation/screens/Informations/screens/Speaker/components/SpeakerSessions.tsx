@@ -33,11 +33,13 @@ const SpeakerSessions: FC<SpeakerSessionsProps> = ({ id }) => {
           session.location ? `, ${session.location}` : ''
         }`}</Markdown>
       ))}
-      {data?.topic?.map((topic) => (
-        <Markdown key={topic.id}>{`- **EQUIP:** ${topic.subject}\n${formatDate(
-          topic.session.begins_at,
-        )}${topic.location ? `, ${topic.location}` : ''}`}</Markdown>
-      ))}
+      {data?.topic?.map((topic) => {
+        return (
+          <Markdown key={topic.id}>{`- **${topic.session.name}:** ${topic.subject}\n${formatDate(
+            topic.session.begins_at
+          )}${topic.location ? `, ${topic.location}` : ''}`}</Markdown>
+        )
+      })}
     </>
   ) : null
 }

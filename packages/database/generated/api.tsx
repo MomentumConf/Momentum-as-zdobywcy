@@ -3063,7 +3063,7 @@ export type GetSpeakerSessionsQueryVariables = Exact<{
 
 export type GetSpeakerSessionsQuery = { session: Array<Pick<Session, 'id' | 'name' | 'begins_at' | 'location'>>, topic: Array<(
     Pick<Topic, 'id' | 'subject' | 'location'>
-    & { session: Pick<Session, 'begins_at'> }
+    & { session: Pick<Session, 'name' | 'begins_at'> }
   )> };
 
 export type GetSpeakersQueryVariables = Exact<{ [key: string]: never; }>;
@@ -3339,6 +3339,7 @@ export const GetSpeakerSessionsDocument = gql`
     subject
     location
     session {
+      name
       begins_at
     }
   }
